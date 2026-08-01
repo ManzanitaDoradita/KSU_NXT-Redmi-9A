@@ -44,7 +44,7 @@ jobs:
             --enable HAVE_KPROBES \
             --enable KPROBE_EVENTS \
             --enable OVERLAY_FS
-          make O=out olddefconfig
+          yes '' | make O=out oldconfig
 
       - name: Build kernel
         run: |
